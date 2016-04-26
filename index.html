@@ -33,26 +33,27 @@
 <h3>
 <a id="1一个简单的指令" class="anchor" href="#1%E4%B8%80%E4%B8%AA%E7%AE%80%E5%8D%95%E7%9A%84%E6%8C%87%E4%BB%A4" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>1.一个简单的指令</h3>
 
-<p>（1）指令的四种使用方式<br>
+<p>（1）指令的四种使用方式  </p>
+
+<pre>
     //a.html
-    
-    </p><div></div>
-    <div></div>
+    &lt;hello&gt;&lt;/hello&gt;
+    &lt;div hello&gt;&lt;/div&gt;
+    &lt;div class="hello"&gt;&lt;/div&gt;
     &lt;!-- directive:hello --&gt;
 
-<pre><code>//a.js
-var myModule = angular.module('helloDirective',[]);
-myModule.directive('hello',function(){
-    return{
-        restrict: 'ECAM',
-        template: '&lt;div&gt;Hi angular!&lt;/div&gt;',
-        replace: true
-    }
-});
-</code></pre>
-
-<p>（2）使用templateUrl加载指令这样加载可写更多的html代码
-    </p><pre>myModule.directive('hello',function(){
+    //a.js
+    var myModule = angular.module('helloDirective',[]);
+    myModule.directive('hello',function(){
+        return{
+            restrict: 'ECAM',
+            template: '<div>Hi angular!</div>',
+            replace: true
+        }
+    });
+    </pre>
+   （2）使用templateUrl加载指令这样加载可写更多的html代码
+    <pre>myModule.directive('hello',function(){
         return{
             restrict: 'ECAM',
             templateUrl: 'templates/hello.html',
@@ -60,26 +61,21 @@ myModule.directive('hello',function(){
         }
     })</pre>
     （3）使用$templateCache将模版缓存起来然后加载
+    <pre> 
+    //run方法等所有模块注入完成后执行一次
+    myModule.run(function($templateCache){
+        $templateCache.put("1.html","<div>hello template Cache</div>");
+    })
 
-<pre><code>//run方法等所有模块注入完成后执行一次
-myModule.run(function($templateCache){
-    $templateCache.put("1.html","&lt;div&gt;hello template Cache&lt;/div&gt;");
-})
-
-myModule.directive("hello",function($templateCache){
-    return{
-        restrict : 'EACM',
-        template: $templateCache.get("1.html"),
-        replace: true
-    }
-});
-</code></pre>
-
-<h3>
-<a id="2directivedirective指令之间的请求" class="anchor" href="#2directivedirective%E6%8C%87%E4%BB%A4%E4%B9%8B%E9%97%B4%E7%9A%84%E8%AF%B7%E6%B1%82" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>2.directive&amp;directive(指令之间的请求)</h3>
-
-<p>创建一个新的指令，假设第一个指令已经应用，在父级元素上你可以请求到它或者在同一级的元素上。如果你需要访问一些功能在这个主要的指令上，通过暴露controller指令可以访问到它（注意这里的controller不是控制器中的controller）：</p>
-
+    myModule.directive("hello",function($templateCache){
+        return{
+            restrict : 'EACM',
+            template: $templateCache.get("1.html"),
+            replace: true
+        }
+    });</pre>
+### 2.directive&amp;directive(指令之间的请求)
+创建一个新的指令，假设第一个指令已经应用，在父级元素上你可以请求到它或者在同一级的元素上。如果你需要访问一些功能在这个主要的指令上，通过暴露controller指令可以访问到它（注意这里的controller不是控制器中的controller）：
 <pre>ui.directive('a', function(){
   return {
     controller: function(){
