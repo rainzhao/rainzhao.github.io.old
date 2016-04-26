@@ -1,35 +1,46 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html>
   <head>
-    <meta charset="UTF-8">
-    <title>Rainzhao.GitHub.io by rainzhao</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
-  </head>
-  <body>
-    <section class="page-header">
-      <h1 class="project-name">Rainzhao.GitHub.io</h1>
-      <h2 class="project-tagline">rainzhao</h2>
-    </section>
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
 
-    <section class="main-content">
-      <p><strong># angular指令</strong></p>
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title>Rainzhao.GitHub.io by rainzhao</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="inner">
+        <h1>Rainzhao.GitHub.io</h1>
+        <h2>rainzhao</h2>
+        <a href="https://github.com/rainzhao" class="button"><small>Follow me on</small> GitHub</a>
+      </div>
+    </header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <p><strong># angular指令</strong></p>
 
 <h3>
 <a id="1一个简单的指令" class="anchor" href="#1%E4%B8%80%E4%B8%AA%E7%AE%80%E5%8D%95%E7%9A%84%E6%8C%87%E4%BB%A4" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>1.一个简单的指令</h3>
 
-<p>（1）指令的四种使用方式</p>
+<p>（1）指令的四种使用方式<br>
+    //a.html
+    
+    </p><div></div>
+    <div></div>
+    &lt;!-- directive:hello --&gt;
 
-<pre><code>//a.html
-&lt;hello&gt;&lt;/hello&gt;
-&lt;div hello&gt;&lt;/div&gt;
-&lt;div class="hello"&gt;&lt;/div&gt;
-&lt;!-- directive:hello --&gt;
-
-//a.js
+<pre><code>//a.js
 var myModule = angular.module('helloDirective',[]);
 myModule.directive('hello',function(){
     return{
@@ -40,16 +51,15 @@ myModule.directive('hello',function(){
 });
 </code></pre>
 
-<p>（2）使用templateUrl加载指令
-    这样加载可写更多的html代码
-    myModule.directive('hello',function(){
+<p>（2）使用templateUrl加载指令这样加载可写更多的html代码
+    </p><pre>myModule.directive('hello',function(){
         return{
             restrict: 'ECAM',
             templateUrl: 'templates/hello.html',
             replace: true
         }
-    })
-    （3）使用$templateCache将模版缓存起来然后加载</p>
+    })</pre>
+    （3）使用$templateCache将模版缓存起来然后加载
 
 <pre><code>//run方法等所有模块注入完成后执行一次
 myModule.run(function($templateCache){
@@ -68,8 +78,9 @@ myModule.directive("hello",function($templateCache){
 <h3>
 <a id="2directivedirective指令之间的请求" class="anchor" href="#2directivedirective%E6%8C%87%E4%BB%A4%E4%B9%8B%E9%97%B4%E7%9A%84%E8%AF%B7%E6%B1%82" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>2.directive&amp;directive(指令之间的请求)</h3>
 
-<p>创建一个新的指令，假设第一个指令已经应用，在父级元素上你可以请求到它或者在同一级的元素上。如果你需要访问一些功能在这个主要的指令上，通过暴露controller指令可以访问到它（注意这里的controller不是控制器中的controller）：
-ui.directive('a', function(){
+<p>创建一个新的指令，假设第一个指令已经应用，在父级元素上你可以请求到它或者在同一级的元素上。如果你需要访问一些功能在这个主要的指令上，通过暴露controller指令可以访问到它（注意这里的controller不是控制器中的controller）：</p>
+
+<pre>ui.directive('a', function(){
   return {
     controller: function(){
       this.data = {}
@@ -88,12 +99,10 @@ myApp.directive('b', function(){
       aContr`oller.data = { ... }
     }
   }
-})</p>
-
-<h3>
-<a id="3directivecontroller指令与控制器之间的请求" class="anchor" href="#3directivecontroller%E6%8C%87%E4%BB%A4%E4%B8%8E%E6%8E%A7%E5%88%B6%E5%99%A8%E4%B9%8B%E9%97%B4%E7%9A%84%E8%AF%B7%E6%B1%82" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>3.directive&amp;controller(指令与控制器之间的请求)</h3>
-
-<p>//directive&amp;controller.js
+})</pre>
+### 3.directive&amp;controller(指令与控制器之间的请求)
+<pre>
+//directive&amp;controller.js
 var myModule = angular.module("myModule",[]);
 myModule.controller("MyCtrl",["$scope",function($scope){
         $scope.loadData = function(){
@@ -104,13 +113,13 @@ myModule.controller("MyCtrl",["$scope",function($scope){
         $scope.loadData2 = function(){
             console.log("数据加载中....2222");
         }
-    }]);</p>
+    }]);</pre>
 
-<p>//在不同的controller中复用指令
-myModule.directive("loader",function(){
+//在不同的controller中复用指令
+<pre>myModule.directive("loader",function(){
     return{
         restrict:'AE',
-        template:"</p><div>滑动加载</div>",
+        template:"<div>滑动加载</div>",
         replace: true,
         link:function(scope,element,attr){
             element.bind("mouseenter",function(){
@@ -120,20 +129,23 @@ myModule.directive("loader",function(){
     }
 })
 
-<p>//index.html
-    </p><div>
+//index.html
+    <div>
         
     </div>
     <div>
         
     </div>
+</pre>
+        </section>
 
-      <footer class="site-footer">
+        <aside id="sidebar">
 
-        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
-      </footer>
 
-    </section>
+          <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
+        </aside>
+      </div>
+    </div>
 
   
   </body>
