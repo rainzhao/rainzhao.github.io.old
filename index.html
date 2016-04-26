@@ -21,22 +21,26 @@
 <h3>
 <a id="1一个简单的指令" class="anchor" href="#1%E4%B8%80%E4%B8%AA%E7%AE%80%E5%8D%95%E7%9A%84%E6%8C%87%E4%BB%A4" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>1.一个简单的指令</h3>
 
-<p>（1）指令的四种使用方式
-    <code>//a.html</code>
-    <code>&lt;hello&gt;&lt;/hello&gt;</code>
-    <code>&lt;div hello&gt;&lt;/div&gt;</code>
-    <code>&lt;div class="hello"&gt;&lt;/div&gt;</code>
-    <code>&lt;!-- directive:hello --&gt;</code>
-    <code>//a.js</code>
-    <code>var myModule = angular.module('helloDirective',[]);</code>
-    <code>myModule.directive('hello',function(){</code>
-        <code>return{</code>
-            <code>restrict: 'ECAM',</code>
-            <code>template: '&lt;div&gt;Hi angular!&lt;/div&gt;',</code>
-            <code>replace: true</code>
-        <code>}</code>
-    <code>});</code>
-   （2）使用templateUrl加载指令
+<p>（1）指令的四种使用方式</p>
+
+<pre><code>//a.html
+&lt;hello&gt;&lt;/hello&gt;
+&lt;div hello&gt;&lt;/div&gt;
+&lt;div class="hello"&gt;&lt;/div&gt;
+&lt;!-- directive:hello --&gt;
+
+//a.js
+var myModule = angular.module('helloDirective',[]);
+myModule.directive('hello',function(){
+    return{
+        restrict: 'ECAM',
+        template: '&lt;div&gt;Hi angular!&lt;/div&gt;',
+        replace: true
+    }
+});
+</code></pre>
+
+<p>（2）使用templateUrl加载指令
     这样加载可写更多的html代码
     myModule.directive('hello',function(){
         return{
@@ -56,7 +60,7 @@ myModule.directive("hello",function($templateCache){
     return{
         restrict : 'EACM',
         template: $templateCache.get("1.html"),
-        replace: true`
+        replace: true
     }
 });
 </code></pre>
