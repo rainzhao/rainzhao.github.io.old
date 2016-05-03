@@ -14,5 +14,5 @@ author: "赵宇"
 <p>思维导图</p>
 <img src="{{ site.url }}/assets/css2.png" alt="思维导图">
 <p>操作流程图</p>
-<img src="{{ site.url }}/assets/css1.png" alt="思维导图">
+<center><img src="{{ site.url }}/assets/css1.png" alt="思维导图"></center>
 <!-- categories: zblog essay -->
