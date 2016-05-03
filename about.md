@@ -13,7 +13,7 @@ permalink: /about/
   <div class="mes common">
     <p>姓名: 赵宇</p>
     <p>邮箱: 695099976@qq.com</p>
-    <p>github: rainzhao.github.com</p>
+    <p>github: <a href="github.com/rainzhao">github.com/rainzhao</a></p>
     <p>联系电话:15566084363</p>
   </div>
 </div>
