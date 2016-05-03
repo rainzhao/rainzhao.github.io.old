@@ -1,7 +1,7 @@
 ---
 layout: page
 title: DO
-permalink: /zblog/download/
+permalink: /download/
 tagline: "Loved it? "
 ---
 
