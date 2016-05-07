@@ -4,7 +4,25 @@ title:  "CSS3"
 date:   2016-03-30 19:45:31 +0530
 author: "赵宇"
 ---
+<style type="text/css">	
 
+	/*匹配doc文档*/
+	a[href$="doc"]{
+		background: url({{ site.url }}/assets/a.png) no-repeat 100%;
+		background-position: left 0px;
+		padding-left: 20px;
+	}
+	a[href$="com"]{
+		background: url({{ site.url }}/assets/a.png) no-repeat 100%;
+		background-position: left -24px;
+		padding-left: 20px;
+	}
+	a[href*="github.io/css3/"]{
+		background: url({{ site.url }}/assets/a.png) no-repeat 100%;
+		background-position: left -48px;
+		padding-left: 20px;
+	}
+</style>
 
 
 
