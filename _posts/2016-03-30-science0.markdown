@@ -56,7 +56,7 @@ author: "赵宇"
 				<div class="u-img"><img src="{{ site.url }}/assets/copy.png" alt="主界面"></a></div>
             	<div class="txt">
 		            <p><a href="{{ site.url }}/assets/electric.doc">详细内容点击这里</a></p>
-		            <p><a href="https://github.com/rainzhao/electric">这里是源代码</a></p>
+		            <p><a href="https://github.com/rainzhao/electric" target="_blank">这里是源代码</a></p>
            		</div>
 			</li>
 		</ul>
