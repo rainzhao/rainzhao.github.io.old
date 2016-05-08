@@ -36,7 +36,8 @@ author: "赵宇"
 	.demo  p{margin-left:110px;overflow:hidden;line-height:28px;margin-top: 10px;}
 	.demo a{margin-top: 10px;padding-left: 21px;}
 	.demo a,.m-list3 a:hover{color:#333;}
-	.demo .u-img{float:left;width:100px;}
+	.demo .u-img{float:left;width: 220px;}
+	.u-img img{width:210px;}
 </style>
 <header>
 	<h1>电费抄表系统移动端设计</h1>

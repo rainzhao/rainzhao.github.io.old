@@ -52,7 +52,7 @@ permalink: /about/
   </div>
   <div class="myExp_page common">
     <p>时间：2015.06 - 2015.08</p>
-    <h4>电费计价系统移动端设计&nbsp;&nbsp;前端应用</h4>
+    <h4><a href="https://github.com/rainzhao/electric">电费计价系统移动端设计</a>&nbsp;&nbsp;前端应用</h4>
     <p>1.移动端为电费抄表人员设计，方便抄表，而无需拿着抄表工具，
     采用html5开发，相比于原生开发周期短，跨平台性强。</p>
     <p>2.后端采用mongodb数据库</p>
