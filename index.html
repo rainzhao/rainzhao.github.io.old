@@ -18,7 +18,7 @@ title: rainZhao
     <a class='postLink' href="{{post.url}}">{{post.title}}</a>
     </div>
     <div class="postExt">
-   {{ post.content | strip_html | truncatewords:2}}
+   {{ post.content | strip_html | truncatewords:1}}<!-- 这里trucatewords控制显示的摘要文字个数 -->
     </div>
   </div>
 
