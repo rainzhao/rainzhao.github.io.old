@@ -1,8 +1,65 @@
 ---
 layout: post
-title:  "姓名"
+title:  "电费计价系统-移动端"
 date:   2016-03-30 19:45:31 +0530
-author: "Chandler Bing"
+author: "赵宇"
 ---
-Third
-<!-- categories: zblog essay -->
+<style type="text/css">
+	header,section,footer{
+		display: block;
+	}
+	header h1{
+		text-align: center;
+		font-weight: bold;
+	}
+	header dl dd{
+		text-indent: 2em;
+
+	}
+	header dt{
+		font-weight: bold;
+	}
+	
+	a[href$="doc"]{
+		background: url("{{site.url}}/assets/a.png") left 0 no-repeat;
+	}
+	
+	.demo{
+		overflow: hidden;
+	}
+	.demo{padding:1px 0 0;zoom:1;}
+	.demo ul{margin:-11px 0 0;}
+	.demo li{display:inline;float:left;width:100%;margin:10px 0 0;}
+	.demo .text{float:right;width:100%;height:95px;overflow:hidden;margin-left:-110px;}
+	.demo  p{margin-left:110px;overflow:hidden;line-height:28px;margin-top: 10px;}
+	.demo a{margin-top: 10px;padding-left: 21px;}
+	.demo a,.m-list3 a:hover{color:#333;}
+	.demo .u-img{float:left;width:100px;}
+</style>
+<header>
+	<h1>电费抄表系统移动端设计</h1>
+	<dl>
+		<dt>作品内容简介:</dt>
+		<dd>该作品是我们团队观察日常生活从而由此产生的一系列想法创建的应用。作品设计的意义是想通过我们所学的知识让网络更好的服务社会，回报社会。如今是信息化的时代，但还有很多的地方依然是采用传统的纸质材质记录，该作品就是将传统的电力抄表、计算、查询功能集成在了一起，方便电力企业的使用。
+		</dd>
+		<dd>
+		该应用属于软件应用与开发——数据库应用，该应用程序服务器后台使用PHP-Apache，数据库使用Mongdb，运行OS为Windows server 2012，移动端设计使用当下流行的ionic框架，能封装后充分适配安卓、苹果等设备，页面加载迅速、节约流量、便于后期使用和维护。</dd>
+	</dl>
+
+</header>
+<section>
+	<div class="demo">
+		<ul>
+			<li>
+				<div class="u-img"><img src="{{ site.url }}/assets/copy.png" alt="主界面"></a></div>
+            	<div class="txt">
+		            <p><a href="{{ site.url }}/assets/electric.doc">详细内容点击这里</a></p>
+		            <p><a href="https://github.com/rainzhao/electric">这里是源代码</a></p>
+           		</div>
+			</li>
+		</ul>
+	</div>
+</section>
+<footer>
+	
+</footer>
