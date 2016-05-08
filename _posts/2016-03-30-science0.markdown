@@ -23,7 +23,9 @@ author: "赵宇"
 	a[href$="doc"]{
 		background: url("{{site.url}}/assets/a.png") left 0 no-repeat;
 	}
-	
+	a[href*="rainzhao/electric"]{
+		background: url("{{site.url}}/assets/a.png") left -24px no-repeat;
+	}
 	.demo{
 		overflow: hidden;
 	}
