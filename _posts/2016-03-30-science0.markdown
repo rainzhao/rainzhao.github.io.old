@@ -26,6 +26,9 @@ author: "赵宇"
 	a[href*="rainzhao/electric"]{
 		background: url("{{site.url}}/assets/a.png") left -24px no-repeat;
 	}
+	a[href*="ionic"]{
+		background: url("{{site.url}}/assets/a.png") left -48px no-repeat;
+	}
 	.demo{
 		overflow: hidden;
 	}
@@ -48,7 +51,7 @@ author: "赵宇"
 		<dd>
 		该应用属于软件应用与开发——数据库应用，该应用程序服务器后台使用PHP-Apache，数据库使用Mongdb，运行OS为Windows server 2012，移动端设计使用当下流行的ionic框架，能封装后充分适配安卓、苹果等设备，页面加载迅速、节约流量、便于后期使用和维护。</dd>
 	</dl>
-
+		
 </header>
 <section>
 	<div class="demo">
@@ -58,6 +61,9 @@ author: "赵宇"
             	<div class="txt">
 		            <p><a href="{{ site.url }}/assets/electric.doc">详细内容点击这里</a></p>
 		            <p><a href="https://github.com/rainzhao/electric" target="_blank">这里是源代码</a></p>
+		            <p><a href="http://ionicframework.com/" target="_blank">ionic官网</a></p>
+		            <p><a href="http://www.ionic.wang/" target="_blank">ionic中文网</a></p>
+		            <p><a href="http://ionichina.com/" target="_blank">ionic社区</a></p>
            		</div>
 			</li>
 		</ul>
