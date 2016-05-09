@@ -1,12 +1,9 @@
 ---
 layout: page
-title: 设计中...
+title: 随想
 permalink: /download/
 tagline: "Loved it? "
 ---
 
+......
 
-<br>
-<div class="download">
-
-</div>
