@@ -14,6 +14,7 @@ permalink: /about/
     <p>姓名: 赵宇</p>
     <p>邮箱: 695099976@qq.com</p>
     <p>github: <a href="http://github.com/rainzhao">github.com/rainzhao</a></p>
+    <p>技术博客: <a href="http://rainzhao.github.io">rainzhao.github.io</a></p>
     <p>联系电话:15566084363</p>
   </div>
 </div>
