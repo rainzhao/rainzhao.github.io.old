@@ -55,7 +55,7 @@ permalink: /about/
     <h4><a href="https://github.com/rainzhao/electric" target="_blank">电费计价系统移动端设计</a>&nbsp;&nbsp;前端应用</h4>
     <p>1.移动端为电费抄表人员设计，方便抄表，而无需拿着抄表工具，
     采用html5开发，相比于原生开发周期短，跨平台性强。</p>
-    <p>2.后端采用mongodb数据库</p>
+    <p>2.在项目中主要负责前端开发，解决了二维码扫描，手机适配，样式处理等多项问题。</p>
     <p>3.本软件在全国大学生计算机设计大赛中国赛三等奖</p>
   </div>
 </div>
