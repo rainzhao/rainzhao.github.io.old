@@ -1,0 +1,78 @@
+---
+layout: post
+title:  "大风车"
+date:   2016-05-21 20:45:31 +0530
+author: "赵宇"
+---
+<style type="text/css">
+	tr td{
+			width: 350px;
+			text-align: left;
+			text-indent: 2em;
+		}
+	tr td:last-child{
+		text-indent: 8em;
+	}
+	table tr:first-child{
+		background-color: #EDEDED;
+		font-weight: normal;
+	}
+</style>
+
+<h3>知识点：</h3><hr>
+<h4>Demo:<a href="http://rainzhao.github.io/css3Exp/flyWin/" target="_blank">点击这里</a></h4>
+
+1. 改变元素中心点**(默认情况，变形的原点在元素的中心点)**的位置`transform-origin`属性:
+	* 语法：`transform-origin:取值`
+
+<table border="1" cellspacing="0">
+	<tr>
+		<th>关键词</th>
+		<th>百分比</th>
+	</tr>
+	<tr>
+		<td>top = top center = center top</td>
+		<td>50% 0%</td>
+	</tr>
+	<tr>
+		<td>right = right center = center right</td>
+		<td>100%或(100% 50%)</td>
+	</tr>
+	<tr>
+		<td>bottom = bottom center = center bottom</td>
+		<td>50% 100%</td>
+	</tr>
+	<tr>
+		<td>left = left center = center left</td>
+		<td>0%或(0% 50%)</td>
+	</tr>
+	<tr>
+		<td>center = center center</td>
+		<td>50%或(50% 50%)</td>
+	</tr>
+	<tr>
+		<td>top left = left top</td>
+		<td>0% 0%</td>
+	</tr>
+	<tr>
+		<td>right top = top right</td>
+		<td>100% 0%</td>
+	</tr>
+	<tr>
+		<td>bottom right = right bottom</td>
+		<td>100% 100%</td>
+	</tr>
+	<tr>
+		<td>bottom left = left bottom</td>
+		<td>0% 100%</td>
+	</tr>
+</table>
+2. 过渡`transition`：
+	* `transition`属性主要包含四个属性值：
+		* `transition-property`：指定过渡或动态模拟的CSS属性。
+		* `transition-duration`：指定完成过渡所需要的时间。
+		* `transition-timing-function`：指定过渡函数。
+		* `transition-delay`：指定过渡开始出现的延迟时间。
+	* `transition`属性缩写：
+
+			transition:<过渡属性> <过渡所需要的时间> <过渡的动画函数> <过渡延迟时间>
