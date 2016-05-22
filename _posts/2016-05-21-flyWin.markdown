@@ -17,6 +17,10 @@ author: "赵宇"
 		background-color: #EDEDED;
 		font-weight: normal;
 	}
+	a[href*="rain"]{
+		background: url("{{site.url}}/assets/a.png") left -50px no-repeat;
+		padding-left: 20px;
+	}
 </style>
 
 <h3>知识点：</h3><hr>
