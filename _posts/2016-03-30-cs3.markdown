@@ -17,7 +17,7 @@ author: "赵宇"
 		background-position: left -24px;
 		padding-left: 20px;
 	}
-	a[href*="github.io/css3/"]{
+	a[href*="github.io/css3Exp/css3create/"]{
 		background: url({{ site.url }}/assets/a.png) no-repeat 100%;
 		background-position: left -48px;
 		padding-left: 20px;
