@@ -80,7 +80,16 @@ body {
     font-kerning: normal;
 }
 
-
+/*添加页面顶部阴影*/
+body:before{
+  content: "";
+  position: fixed;
+  height: 10px;
+  width: 100%;
+  top: -10px;
+  box-shadow: 0 0 30px 5px rgba(0,0,0,0.6);
+  z-index: 100;
+}
 
 /**
  * Set `margin-bottom` to maintain vertical rhythm
